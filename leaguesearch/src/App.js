@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 // import logo from './logo.svg'
 import './App.css'
+const port = process.env.PORT || 3000
 
 function App() {
   const [searchText, setSearchText] = useState('')
