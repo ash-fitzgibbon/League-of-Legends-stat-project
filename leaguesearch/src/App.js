@@ -43,7 +43,10 @@ function App() {
       {JSON.stringify(playerData) != '{}' ? (
         <>
           <p>{playerData.name}</p>
-          {/* <img width="100" height="100" src={"http://ddragon.leagueoflegends.com/cdn/11.21.1/img/profileicon/" + playerData.profileIconID + ".png"}</img> */}
+          <img
+            src={`http://ddragon.leagueoflegends.com/cdn/11.21.1/img/profileicon/${playerData.profileIconId}.png`}
+          />
+          {/* <img src=`http://ddragon.leagueoflegends.com/cdn/11.21.1/img/profileicon/`/> */}
           <p>Summoner level {playerData.summonerLevel}</p>
         </>
       ) : (
