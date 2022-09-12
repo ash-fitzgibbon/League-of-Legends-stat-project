@@ -34,6 +34,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        <title>League Check</title>
         <h5>League of Legends Player Searcher</h5>
         <input
           type="text"
